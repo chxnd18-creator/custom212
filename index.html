@@ -1288,7 +1288,7 @@
             if (!bgMusic) return;
             bgMusic.muted = false;
             bgMusic.volume = 0;
-            bgMusic.currentTime = 84;
+            bgMusic.currentTime = 0;
             bgMusic.play().then(() => {
                 bgMusic.pause(); // หยุดรอ — volume = 0 ไว้ก่อน
                 audioUnlocked = true;
