@@ -1844,9 +1844,9 @@
             jigsawBoard.appendChild(gridCanvas);
 
             const img = new Image();
-                img.src = '11.png?v=1';            
+                img.src = '11.jpeg?v=1';            
                 img.onload = () => {
-                console.log('11.png loaded:', img.width, img.height);
+                console.log('11.jpeg loaded:', img.width, img.height);
                 let locked = 0;
                 const SNAP = 28;
                 const pieces = [];
@@ -1971,7 +1971,7 @@
             };
             img.onerror = () => {
                 // fallback: วาดสีชมพูแทนรูป
-                console.error('11.png load failed, using fallback');
+                console.error('11.jpeg load failed, using fallback');
                 img.dispatchEvent(new Event('load'));
             };
         }
